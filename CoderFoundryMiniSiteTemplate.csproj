@@ -77,11 +77,11 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Images\bootstrapgreen.png" />
-    <Content Include="Images\css3green.png" />
-    <Content Include="Images\html5green.png" />
-    <Content Include="Images\jquerygreen.png" />
-    <Content Include="Images\jsgreen.png" />
+    <Content Include="Images\bootstrappink.png" />
+    <Content Include="Images\css3pink.png" />
+    <Content Include="Images\html5icon.png" />
+    <Content Include="Images\jquery.png" />
+    <Content Include="Images\jspink.png" />
     <Content Include="Images\onestar.png" />
     <Content Include="Images\signature2.png" />
     <Content Include="Images\tacocat.png" />
