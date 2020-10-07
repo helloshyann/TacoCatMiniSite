@@ -12,7 +12,7 @@
     Green = #44D7B6
     Yellow = #F9C910
 
-    REMEMBER TO CHANGE COLOR SCHEMES FOR (.banner-color) AND (.btn-default background)
+    REMEMBER TO CHANGE COLOR SCHEMES FOR (.banner-color) AND (.btn-default background) AND (.modal h)
 
 */
 
@@ -20,9 +20,12 @@
 /*=================================================================*/
 /*                      BASE                              
 /*=================================================================*/
+
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -70,6 +73,48 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+
+.modalContainer {
+    background-color: rgb(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.modalContainer.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.modal {
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+}
+
+    .modal h1 {
+        color: #F95775;
+        margin: 0;
+    }
+
+    .modal p {
+        font-size: 14px;
+        opacity: 0.7;
+    }
 
 /*=================================================================*/
 /*                      TYPOGRAPHY                              

@@ -57,6 +57,7 @@
     <!-- Page Content -->
     <div class="container">
 
+        <!--Page Title-->
         <div class="row">
             <div class="col text-center">
                 <h1 class="mt-5">TACOCAT</h1>
@@ -67,7 +68,7 @@
         <!--Input Row-->
         <div class="row">
             <div class="col text-center">
-                <input type="text" id="inputBox" name="palindrome" size="50" placeholder="Write your text here...">
+                <input type="text" id="inputBox" name="palindrome" size="40" placeholder="Write your text here...">
             </div>
         </div>
 
@@ -75,20 +76,36 @@
         <!--Button Row-->
         <div class="row">
             <div class="col text-center">
-                <button class="btn btn-default" id="tacoButton">Verify Palindrome</button>
+                <button class="btn btn-default" id="tacoButton" data-toggle="modal" data-target="#myModal" onclick="flipSplit()">
+                    Verify Palindrome
+                </button>
             </div>
         </div>
 
-        <p></p>
-        <!--Output Row-->
-        <div class="row">
-            <div class="col text-center">
-                <span class="mt-5" id="result"></span><br />
-                <span class="mt-5" id="result2"></span>
+        <!--Modal Pop Up-->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h1>Results</h1>
+                        <p>
+                            "<span class="mt-5" id="result"></span>"
+                            <br />
+                            <span class="mt-5" id="result2"></span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
+
+
 
     <script>
 
@@ -109,24 +126,38 @@
             //Step 3: Display Result to User
 
             if (modifiedWord == reversedWord) {
-                document.getElementById("result2").innerHTML = `YES! a palindrome`;
+                document.getElementById("result2").innerHTML = `YES! This is a palindrome.`;
             }
             else {
-                document.getElementById("result2").innerHTML = `NOT a palindrome`;
+                document.getElementById("result2").innerHTML = `SORRY, this is not a palindrome.`;
             }
 
         });
+
+        //Modal Scripts
+        const open = document.getElementById("open");
+        const modalContainer = document.getElementById("modalContainer");
+        const close = document.getElementById("close");
+
+        open.addEventListener('click', () => {
+            modalContainer.classList.add('show');
+        });
+
+        close.addEventListener('click', () => {
+            modalContainer.classList.remove('show');
+        });
+
+
     </script>
 
-   <!--Reverse Loop function
-   function reverseLoop(word) {
-       let reversedWord = document.getElementById("inputBox").value;
-       for (let loop = word.length - 1; loop >= 0; loop--) {
-           reversedWord += word.charAt(loop)
-       }
-       return reversedWord;
-   }-->
-
+    <!--Reverse Loop function
+    function reverseLoop(word) {
+        let reversedWord = document.getElementById("inputBox").value;
+        for (let loop = word.length - 1; loop >= 0; loop--) {
+            reversedWord += word.charAt(loop)
+        }
+        return reversedWord;
+    }-->
     <!-- Bootstrap core JavaScript -->
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
