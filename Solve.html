@@ -96,10 +96,10 @@
     <script>
 
         //Flip, Split, Join function
-        function flipSplit() {
-            let userWord = document.getElementById("inputBox").value;
-            let flipped = userWord.split("").reverse("").join("");
+        function flipSplit(word) {            
+            let flipped = word.split("").reverse().join("");
             document.getElementById("result").innerHTML = flipped;
+            return flipped;
         }
 
         //Button Event
@@ -111,7 +111,7 @@
             var reversedWord = flipSplit(modifiedWord)
             //Step 3: Display Result to User
 
-            if (modifiedWord === reversedWord) {
+            if (modifiedWord == reversedWord) {
                 document.getElementById("result2").innerHTML = `YES! a palindrome`;
             }
             else {
