@@ -91,11 +91,10 @@
 
     </div>
 
-
     <script>
 
         //Flip, Split, Join function
-        function flipSplit(word) {            
+        function flipSplit(word) {
             let flipped = word.split("").reverse().join("");
             document.getElementById("result").innerHTML = flipped;
             return flipped;
@@ -118,54 +117,21 @@
             }
 
         });
-
-
-                    //Reverse Loop function
-                    //function reverseLoop(word) {
-                    //    let reversedWord = document.getElementById("inputBox").value;
-                    //    for (let loop = word.length - 1; loop >= 0; loop--) {
-                    //        reversedWord += word.charAt(loop)
-                    //    }
-                    //    return reversedWord;
-                    //}
-
-
-
-                    ////Check If Palindrome function
-                    //function checkPalindrome() { //call this guy maybe event listener
-                    //    let originalWord = document.getElementById("inputBox").value;
-                    //    let modifiedWord = originalWord.toLowerCase();
-                    //    let reversedWord = reversedLoop(originalWord);
-                    //    if (modifiedWord == reversedWord) {
-                    //        document.getElementById("result").innerHTML = `YES a palindrome`;
-                    //    }
-                    //    else {
-                    //        document.getElementById("result").innerHTML = `NOT a palindrome`;
-                    //    }
-                    //}
-
-                    ////Simple Palindrome function
-                    //function pPalindrome(str) {
-                    //    var reversed = str.split("").reverse("").join("");
-                    //    if (reversed === str) return true;
-
-                    //    return false;
-
-
-
     </script>
 
-
-
-
-
-
+   <!--Reverse Loop function
+   function reverseLoop(word) {
+       let reversedWord = document.getElementById("inputBox").value;
+       for (let loop = word.length - 1; loop >= 0; loop--) {
+           reversedWord += word.charAt(loop)
+       }
+       return reversedWord;
+   }-->
 
     <!-- Bootstrap core JavaScript -->
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-    <!--Custom JS-->
 </body>
 </html>
