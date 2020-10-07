@@ -62,8 +62,7 @@
                 <p class="lead"></p>
 
                 <pre>
-<code class="language-js line-numbers">
-    //Flip, Split, Join function
+<code class="language-js line-numbers">//Flip, Split, Join function
     function flipSplit(word) {
     let flipped = word.split("").reverse().join("");
     document.getElementById("result").innerHTML = flipped;
@@ -91,6 +90,47 @@
 </code>
                 </pre>
 
+                <pre>
+<code class="language-html line-numbers">
+    &lt;div class="container">
+
+        &lt;div class="row">
+            &lt;div class="col text-center">
+                &lt;h1 class="mt-5">TACOCAT&lt;/h1>
+            &lt;/div>
+        &lt;/div>
+
+    &lt;hr />
+
+    &lt;!--Input Row-->
+        &lt;div class="row">
+            &lt;div class="col text-center">
+                &lt;input type="text" id="inputBox" name="palindrome" size="50" placeholder="Write your text here...">
+            &lt;/div>
+        &lt;/div>
+
+    &lt;p>&lt;/p>
+   
+    &lt;!--Button Row-->
+        &lt;div class="row">
+            &lt;div class="col text-center">
+                &lt;button class="btn btn-default" id="tacoButton">Verify Palindrome&lt;/button>
+            &lt;/div>
+        &lt;/div>
+
+    &lt;p>&lt;/p>
+
+    &lt;!--Output Row-->
+        &lt;div class="row">
+            &lt;div class="col text-center">
+                &lt;h2 class="mt-5" id="result">&lt;/h2>
+                &lt;h3 class="mt-5" id="result2">&lt;/h3>
+            &lt;/div>
+        &lt;/div>
+
+    &lt;/div>
+</code>
+                </pre>
 
             </div>
         </div>
