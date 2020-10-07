@@ -33,7 +33,7 @@ html {
 body {
     color: #353353;
     background-color: #F9F9FF;
-    font-family: "geosan", sans-serif;
+    font-family: LouisGeorge, sans-serif;
     font-size: 18px;
     line-height: 1.7;
     overflow-x: hidden;
@@ -81,8 +81,8 @@ img {
 }
 
 @font-face {
-    font-family: "geosan";
-    src: url("../Fonts/GeosansLight.ttf");
+    font-family: 'LouisGeorge';
+    src: url('../Fonts/LouisGeorge.ttf') format('truetype');
 }
 
 h1, h2, h3, h4, h5, h6 {

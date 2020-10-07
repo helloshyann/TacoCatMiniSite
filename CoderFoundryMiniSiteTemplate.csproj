@@ -108,6 +108,7 @@
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Fonts\LEMONMILK-Light.ttf" />
     <Content Include="Fonts\GeosansLight.ttf" />
+    <Content Include="Fonts\LouisGeorge.ttf" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
