@@ -91,46 +91,59 @@
                 </pre>
 
                 <pre>
-<code class="language-html line-numbers">
-    &lt;div class="container">
+<code class="language-html line-numbers">&lt;div class="container">
 
-        &lt;div class="row">
-            &lt;div class="col text-center">
-                &lt;h1 class="mt-5">TACOCAT&lt;/h1>
-            &lt;/div>
+&lt;!--Page Title-->
+    &lt;div class="row">
+        &lt;div class="col text-center">
+            &lt;h1 class="mt-5">TACOCAT&lt;/h1>
         &lt;/div>
+    &lt;/div>
 
     &lt;hr />
 
-    &lt;!--Input Row-->
-        &lt;div class="row">
-            &lt;div class="col text-center">
-                &lt;input type="text" id="inputBox" name="palindrome" size="50" placeholder="Write your text here...">
-            &lt;/div>
+&lt;!--Input Row-->
+    &lt;div class="row">
+        &lt;div class="col text-center">
+            &lt;input type="text" id="inputBox" name="palindrome" size="40" placeholder="Write your text here...">
         &lt;/div>
-
-    &lt;p>&lt;/p>
-   
-    &lt;!--Button Row-->
-        &lt;div class="row">
-            &lt;div class="col text-center">
-                &lt;button class="btn btn-default" id="tacoButton">Verify Palindrome&lt;/button>
-            &lt;/div>
-        &lt;/div>
-
-    &lt;p>&lt;/p>
-
-    &lt;!--Output Row-->
-        &lt;div class="row">
-            &lt;div class="col text-center">
-                &lt;h2 class="mt-5" id="result">&lt;/h2>
-                &lt;h3 class="mt-5" id="result2">&lt;/h3>
-            &lt;/div>
-        &lt;/div>
-
     &lt;/div>
+
+&lt;p>&lt;/p>
+
+&lt;!--Button Row-->
+    &lt;div class="row">
+        &lt;div class="col text-center">
+            &lt;button class="btn btn-default" id="tacoButton" data-toggle="modal" data-target="#myModal" onclick="flipSplit()">
+                Verify Palindrome
+            &lt;/button>
+        &lt;/div>
+    &lt;/div>
+
+&lt;!--Modal Pop Up-->
+    &lt;div id="myModal" class="modal fade" role="dialog">
+        &lt;div class="modal-dialog">
+            &lt;div class="modal-content">
+                &lt;div class="modal-header">
+                    &lt;button type="button" class="close" data-dismiss="modal">&times;&lt;/button>
+                &lt;/div>
+                &lt;div class="modal-body text-center">
+                    &lt;h1>Results&lt;/h1>
+                    &lt;p>
+                    "&lt;span class="mt-5" id="result">&lt;/span>"
+                    &lt;br />
+                    &lt;span class="mt-5" id="result2">&lt;/span>
+                    &lt;/p>
+                &lt;/div>
+            &lt;div class="modal-footer text-center">
+                &lt;button type="button" class="btn btn-default" data-dismiss="modal">Close&lt;/button>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+&lt;/div>
 </code>
-                </pre>
+    </pre>
 
             </div>
         </div>

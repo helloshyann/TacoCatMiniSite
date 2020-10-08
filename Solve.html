@@ -67,7 +67,7 @@
         <hr />
         <!--Input Row-->
         <div class="row">
-            <div class="col text-center">
+            <div class="col text-center" id="inputTaco">
                 <input type="text" id="inputBox" name="palindrome" size="40" placeholder="Write your text here...">
             </div>
         </div>
@@ -105,8 +105,7 @@
         </div>
     </div>
 
-
-
+    <!--Custom JS-->
     <script>
 
         //Flip, Split, Join function
@@ -134,30 +133,8 @@
 
         });
 
-        //Modal Scripts
-        const open = document.getElementById("open");
-        const modalContainer = document.getElementById("modalContainer");
-        const close = document.getElementById("close");
-
-        open.addEventListener('click', () => {
-            modalContainer.classList.add('show');
-        });
-
-        close.addEventListener('click', () => {
-            modalContainer.classList.remove('show');
-        });
-
-
     </script>
 
-    <!--Reverse Loop function
-    function reverseLoop(word) {
-        let reversedWord = document.getElementById("inputBox").value;
-        for (let loop = word.length - 1; loop >= 0; loop--) {
-            reversedWord += word.charAt(loop)
-        }
-        return reversedWord;
-    }-->
     <!-- Bootstrap core JavaScript -->
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
