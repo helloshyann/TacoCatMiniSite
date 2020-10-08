@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--Custom CSS-->
     <link href="Content/Custom.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -68,7 +69,7 @@
         <!--Input Row-->
         <div class="row">
             <div class="col text-center" id="inputTaco">
-                <input type="text" id="inputBox" name="palindrome" size="40" placeholder="Write your text here...">
+                <input type="text" id="inputBoxSJ" name="palindrome" size="40" value=" T A C O C A T " placeholder="Write your text here...">
             </div>
         </div>
 
@@ -76,9 +77,9 @@
         <!--Button Row-->
         <div class="row">
             <div class="col text-center">
-                <button class="btn btn-default" id="tacoButton" data-toggle="modal" data-target="#myModal" onclick="flipSplit()">
-                    Verify Palindrome
-                </button>
+                <b<button class="btn btn-default" id="tacoButton" data-toggle="modal" data-target="#myModal">
+    Verify Palindrome
+</button>
             </div>
         </div>
 
@@ -105,41 +106,44 @@
         </div>
     </div>
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="Scripts/confetti.js"></script>
+
     <!--Custom JS-->
     <script>
-
         //Flip, Split, Join function
         function flipSplit(word) {
             let flipped = word.split("").reverse().join("");
             document.getElementById("result").innerHTML = flipped;
             return flipped;
         }
-
         //Button Event
         document.getElementById("tacoButton").addEventListener('click', function () {
             //Step 1: Get User Input
-            var userWord = document.getElementById("inputBox").value;
+            var userWord = document.getElementById("inputBoxSJ").value;
             var modifiedWord = userWord.toLowerCase().replace(/ /g, "");
             //Step 2: Do Something With Input
             var reversedWord = flipSplit(modifiedWord)
             //Step 3: Display Result to User
-
             if (modifiedWord == reversedWord) {
                 document.getElementById("result2").innerHTML = `<h5>YES! This is a palindrome.</h5>`;
+                confetti.start(1000);
             }
             else {
                 document.getElementById("result2").innerHTML = `<h5>SORRY, this is not a palindrome.</h5>`;
             }
-
         });
-
     </script>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="Scripts/jquery.confetti.js"></script>
+
+
+
+
+
+
 
 </body>
 </html>
