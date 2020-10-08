@@ -4,7 +4,7 @@
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Coding Challenges | Shyann Jobe</title>
+    <title>Taco Cat | Shyann Jobe</title>
     <meta name="description" content="Shyann Jobe">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="Images/onestar.png">
@@ -119,7 +119,7 @@
         document.getElementById("tacoButton").addEventListener('click', function () {
             //Step 1: Get User Input
             var userWord = document.getElementById("inputBox").value;
-            var modifiedWord = userWord.toLowerCase();
+            var modifiedWord = userWord.toLowerCase().replace(/ /g, "");
             //Step 2: Do Something With Input
             var reversedWord = flipSplit(modifiedWord)
             //Step 3: Display Result to User
