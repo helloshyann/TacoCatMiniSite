@@ -90,6 +90,8 @@
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.5.1.min.js" />
+    <Content Include="Scripts\jquery.confetti.js" />
     <Content Include="Scripts\prism.js" />
     <Content Include="Solve.html" />
   </ItemGroup>
