@@ -85,6 +85,7 @@
     <Content Include="Images\jspink.png" />
     <Content Include="Images\onestar.png" />
     <Content Include="Images\signature2.png" />
+    <Content Include="Images\tacocatwriting.png" />
     <Content Include="Index.html" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
